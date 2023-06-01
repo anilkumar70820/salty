@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Sen:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* ======Root=========== */
+:root {
+    --fs-4xsm: 12px;
+    --fs-3xsm: 14px;
+    --fs-2xsm: 16px;
+    --fs-xsm: 18px;
+    --fs-3md: 20px;
+    --fs-2md: 24px;
+    --fs-xmd: 26px;
+    --fs-md: 28px;
+    --fs-lg: 30px;
+    --fs-2lg: 40px;
+    --fs-xl: 46px;
+    --fs-2xl: 56px;
+    --fs-3xl: 84px;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --text-2d3134: #2d3134;
+    --text-f66f4d: #f66f4d;
+    --text-5b5f62: #5b5f62;
+    --text-9498a4: #9498a4;
+    --text-ffffff: #ffffff;
+    --text-939597: #939597;
+    --text-676a6c: #676a6c;
+    --bg-primary: #FAFBED;
+    --bg-secondary: #FFD4B2;
+}
+
+.fs-4xsm {
+    font-size: var(--fs-4xsm);
+}
+
+.fs-3xsm {
+    font-size: var(--fs-3xsm);
+}
+
+.fs-2xsm {
+    font-size: var(--fs-2xsm);
+}
+
+.fs-xsm {
+    font-size: var(--fs-xsm);
+}
+
+.fs-3md {
+    font-size: var(--fs-3md);
+}
+
+.fs-2md {
+    font-size: var(--fs-2md);
+}
+
+.fs-xmd {
+    font-size: var(--fs-xmd);
+}
+
+.fs-lg {
+    font-size: var(--fs-lg);
+}
+
+.fs-2lg {
+    font-size: var(--fs-2lg);
+}
+
+.fs-xl {
+    font-size: var(--fs-xl);
+}
+
+.fs-2xl {
+    font-size: var(--fs-2xl);
+}
+
+.fs-3xl {
+    font-size: var(--fs-3xl);
+}
+
+.fw-regular {
+    font-weight: var(--fw-regular);
+}
+
+.fw-medium {
+    font-weight: var(--fw-medium);
+}
+
+.fw-semi-bold {
+    font-weight: var(--fw-semi-bold);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+.text-2d3134 {
+    color: var(--text-2d3134);
+}
+
+.text-f66f4d {
+    color: var(--text-f66f4d);
+}
+
+.text-5b5f62 {
+    color: var(--text-5b5f62);
+}
+
+.text-9498a4 {
+    color: var(--text-9498a4);
+}
+
+.text-ffffff {
+    color: var(--text-ffffff);
+}
+
+.text-939597 {
+    color: var(--text-939597);
+}
+
+.text-676a6c {
+    color: var(--text-676a6c);
+}
+
+.bg-primary {
+    background-color: var(--bg-primary);
+}
+
+.bg-secondary {
+    background-color: var(--bg-secondary);
+}
+
+/* ===========Root End========== */
