@@ -1,0 +1,53 @@
+.ff-sen{
+    font-family: "sen";
+}
+.ff-poppins{
+    font-family: "poopins";
+}
+.ff-inter{
+    font-family: "inter";
+}
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box;
+}
+
+.container-1 {
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+.s{
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:992px) {
+.navbaar{
+    position: absolute;
+    left: -100%;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(218, 134, 26);
+    transition: all 500ms linear;
+    
+}
+.show{
+left: 0;
+}
+
+
+}
