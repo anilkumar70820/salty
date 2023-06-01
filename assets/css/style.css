@@ -139,3 +139,15 @@
 }
 
 /* ===========Root End========== */
+/* =============Common Classes============ */
+.ff-sen {
+    font-family: "sen", sans-serif;
+}
+
+.ff-poppins {
+    font-family: "poppins", sans-serif;
+}
+
+.ff-inter {
+    font-family: "inter", sans-serif;
+}
