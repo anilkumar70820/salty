@@ -27,6 +27,7 @@
     --fw-medium: 500;
     --fw-semi-bold: 600;
     --fw-bold: 700;
+    --text-2E476B: #2E476B;
     --text-2d3134: #2d3134;
     --text-f66f4d: #f66f4d;
     --text-5b5f62: #5b5f62;
@@ -100,6 +101,10 @@
 
 .fw-bold {
     font-weight: var(--fw-bold);
+}
+
+.text-2E476B {
+    color: var(--text-2E476B);
 }
 
 .text-2d3134 {
