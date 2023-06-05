@@ -127,6 +127,7 @@
     width: 400px;
     padding: 12px;
     background-color: #FAF8ED;
+    box-shadow: 0px 24px 90px 0px #FAF8ED;
 }
 
 .slider-book-now-btn {
