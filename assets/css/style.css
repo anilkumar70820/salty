@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    text-decoration: none;
+    text-decoration: none !important;
     box-sizing: border-box;
 }
 
@@ -27,16 +27,16 @@
     --fw-medium: 500;
     --fw-semi-bold: 600;
     --fw-bold: 700;
-    --text-2E476B: #2E476B;
     --text-2d3134: #2d3134;
+    --text-2E476B: #2E476B;
     --text-f66f4d: #f66f4d;
     --text-5b5f62: #5b5f62;
     --text-9498a4: #9498a4;
     --text-ffffff: #ffffff;
     --text-939597: #939597;
     --text-676a6c: #676a6c;
-    --bg-primary: #FAFBED;
-    --bg-secondary: #FFD4B2;
+    --bg-primary: #FAF8ED !important;
+    --bg-secondary: #FFD482 !important;
 }
 
 .fs-4xsm {
@@ -65,6 +65,10 @@
 
 .fs-xmd {
     font-size: var(--fs-xmd);
+}
+
+.fs-md {
+    font-size: var(--fs-md);
 }
 
 .fs-lg {
@@ -103,12 +107,12 @@
     font-weight: var(--fw-bold);
 }
 
-.text-2E476B {
-    color: var(--text-2E476B);
-}
-
 .text-2d3134 {
     color: var(--text-2d3134);
+}
+
+.text-2E476B {
+    color: var(--text-2E476B);
 }
 
 .text-f66f4d {
@@ -135,12 +139,303 @@
     color: var(--text-676a6c);
 }
 
-.bg-primary {
+.bg-first {
     background-color: var(--bg-primary);
 }
 
-.bg-secondary {
+.bg-second {
     background-color: var(--bg-secondary);
 }
 
 /* ===========Root End========== */
+/* =============Common Classes============ */
+.ff-sen {
+    font-family: "sen";
+}
+
+.ff-poppins {
+    font-family: "poppins";
+}
+
+.ff-inter {
+    font-family: "inter";
+}
+
+/* ================Fifth Section=========== */
+.destination-btn {
+    border: 1px solid #2D3134;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: var(--bg-primary);
+}
+
+.destination-btn:hover {
+    color: var(--text-ffffff);
+    background-color: #2D3134;
+    cursor: pointer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, );
+    gap: 30px;
+}
+
+.grid-1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.grid-2 {
+    grid-row: 1/3;
+    grid-column: 2/3;
+}
+
+.grid-3 {
+    grid-row: 1/2;
+    grid-column: 3/5;
+}
+
+.grid-4 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.grid-5 {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+.grid-6 {
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+
+.pos-absolute {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    display: none;
+}
+
+.pos-absolute-2 {
+    position: absolute;
+    bottom: 10px;
+    left: 24px;
+    display: none;
+}
+
+.rating-bg {
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.rating-bg-2 {
+    padding: 5px 10px;
+    background-color: #2D3134;
+    border-radius: 50px;
+}
+
+.rating:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.rating:hover .pos-absolute {
+    display: block;
+}
+
+.rating:hover .pos-absolute-2 {
+    display: block;
+}
+
+/* ========Fifth Section End============= */
+/* ========Sixth Section================= */
+.line::after {
+    content: '';
+    position: absolute;
+    width: 67px;
+    height: 8px;
+    border-radius: 4px;
+    top: 10%;
+    background-color: #FFD482
+}
+
+.slider-box {
+    padding: 32px;
+    background-color: white;
+    border-radius: 14px;
+}
+
+.arrow-box {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-box:hover {
+    background-color: #2D3134;
+    cursor: pointer;
+}
+
+.arrow-box:hover path {
+    stroke: white;
+}
+
+/* ===========Sixth Section End========= */
+/* ===========Seven Section Start======= */
+.input-bg {
+    width: 450px;
+    height: 60px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.icon-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: #F66F4D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radius {
+    border-radius: 30px;
+}
+
+.bg-line {
+    background-image: url(/assets/image/png/background-line.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* =========Seven Section End=========== */
+/* =========Footer Start============= */
+.social-media-box {
+    border: 1px solid black;
+    border-radius: 100px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-box:hover {
+    border: 1px solid #f66f4d;
+}
+
+.social-media-box:hover path {
+    fill: #F66F4D;
+}
+
+/* =========Media Quries============= */
+@media (min-width:1200px) {
+    .my-container {
+        max-width: 1170px !important;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+}
+
+@media (max-width:992px) {
+    .grid-container {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(3, );
+        gap: 30px;
+    }
+
+    .grid-1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .grid-2 {
+        grid-row: 1/3;
+        grid-column: 2/3;
+    }
+
+    .grid-3 {
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+
+    .grid-4 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .grid-5 {
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+
+    .grid-6 {
+        grid-row: 4/5;
+        grid-column: 2/3;
+    }
+}
+
+@media (max-width:576px) {
+    .grid-container {
+        display: grid;
+    }
+
+    .grid-1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .grid-2 {
+        grid-row: 2/4;
+        grid-column: 1/2;
+    }
+
+    .grid-3 {
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+
+    .grid-4 {
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+
+    .grid-5 {
+        grid-row: 6/7;
+        grid-column: 1/2;
+    }
+
+    .grid-6 {
+        grid-row: 7/8;
+        grid-column: 1/2;
+    }
+
+    .w-sm-100 {
+        width: 100%;
+    }
+
+    .line::after {
+        top: 9%;
+    }
+
+}

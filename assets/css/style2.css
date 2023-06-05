@@ -46,38 +46,38 @@
     background-color: #faf8ed;
 }
 
-.line {
+.line-1 {
     width: 47px;
     height: 1px;
     border: 1px solid #EAEAEB;
     transform: rotate(90deg);
 }
 
-.pos-absolute {
+.pos-abso {
     position: absolute;
     left: 10px;
     top: -27px;
 
 }
 
-.pos-absolute-1 {
+.pos-abso-1 {
     position: absolute;
     left: 38px;
     top: -27px;
 }
 
-.pos-absolute-2 {
+.pos-abso-2 {
     position: absolute;
     right: 8px;
     top: -27px;
 }
 
-.pos-absolute-3 {
+.pos-abso-3 {
     position: absolute;
     right: 82%;
     top: 64%;
 }
-.pos-absolute-4{
+.pos-abso-4{
     position: absolute;
     top: 43%;
     right: -18%;
