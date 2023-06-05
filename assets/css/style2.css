@@ -1,12 +1,15 @@
-.ff-sen{
+.ff-sen {
     font-family: "sen";
 }
-.ff-poppins{
+
+.ff-poppins {
     font-family: "poopins";
 }
-.ff-inter{
+
+.ff-inter {
     font-family: "inter";
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -22,45 +25,107 @@
     padding-right: 12px;
     padding-left: 12px;
 }
-.box{
-    width: px;
-height:px;
-background: red;
-box-shadow: 0px 28px 56px -6px rgba(246, 111, 77, 0.05);
-border-radius: 38px;
-}
-.border-1{
-    position: absolute;
-    width: 133.36px;
-    height: 145.71px;
-    background: #FFFFFF;
-    box-shadow: 0px 14px 24px -10px rgba(226, 154, 53, 0.2);
-    border-radius: 9.87879px;
-    
+
+.box {
+    width: 500px;
+    height: 76px;
+    background: #fdfeff;
+    box-shadow: 0px 28px 56px -6px rgba(246, 111, 77, 0.05);
+    border-radius: 38px;
 }
 
-.line{
-    width: 47px;
-height: 1px;
-border: 1px solid #EAEAEB;
-transform: rotate(90deg);
+.border-1 {
+    max-width: 133.36px;
+    background: #FFFFFF;
+    box-shadow: 0px 14px 24px -10px rgba(226, 154, 53, 0.2);
+    border-radius:0px 0px 0px 10px;
+
 }
+
+.bg-clr {
+    background-color: #faf8ed;
+}
+
+.line {
+    width: 47px;
+    height: 1px;
+    border: 1px solid #EAEAEB;
+    transform: rotate(90deg);
+}
+
+.pos-absolute {
+    position: absolute;
+    left: 10px;
+    top: -27px;
+
+}
+
+.pos-absolute-1 {
+    position: absolute;
+    left: 38px;
+    top: -27px;
+}
+
+.pos-absolute-2 {
+    position: absolute;
+    right: 8px;
+    top: -27px;
+}
+
+.pos-absolute-3 {
+    position: absolute;
+    right: 82%;
+    top: 64%;
+}
+.pos-absolute-4{
+    position: absolute;
+    top: 43%;
+    right: -18%;
+}
+
+.border-3 {
+
+    background: #FFFFFF;
+    border-radius: 4.93939px;
+    border: 1px solid #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width:992px) {
-.navbaar{
-    position: absolute;
-    left: -100%;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(218, 134, 26);
-    transition: all 500ms linear;
+    .navbaar {
+        position: absolute;
+        left: -100%;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(218, 134, 26);
+        transition: all 500ms linear;
+
+    }
+
+    .show {
+        left: 0;
+    }
+
+
+}
+/* .search_icon{background-color: red;
+animation: border_r 5s  linear infinite;}
+@keyframes border_r {
+    0%{border-radius:59% 41% 70% 30% / 30% 56% 44% 70% ;}
+    25%{border-radius: 83% 17% 70% 30% / 80% 81% 19% 20% ;}
+    50%{border-radius:59% 41% 70% 30% / 30% 56% 44% 70% ;}
+    75%{border-radius: 83% 17% 70% 30% / 80% 81% 19% 20% ;}
     
-}
-.show{
-left: 0;
-}
-
-
-}
+} */
