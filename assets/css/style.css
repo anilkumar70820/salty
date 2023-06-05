@@ -28,13 +28,14 @@
     --fw-semi-bold: 600;
     --fw-bold: 700;
     --text-2d3134: #2d3134;
+    --text-2E476B: #2E476B;
     --text-f66f4d: #f66f4d;
     --text-5b5f62: #5b5f62;
     --text-9498a4: #9498a4;
     --text-ffffff: #ffffff;
     --text-939597: #939597;
     --text-676a6c: #676a6c;
-    --bg-primary: #FAFBED !important;
+    --bg-primary: #FAF8ED !important;
     --bg-secondary: #FFD482 !important;
 }
 
@@ -64,6 +65,10 @@
 
 .fs-xmd {
     font-size: var(--fs-xmd);
+}
+
+.fs-md {
+    font-size: var(--fs-md);
 }
 
 .fs-lg {
@@ -104,6 +109,10 @@
 
 .text-2d3134 {
     color: var(--text-2d3134);
+}
+
+.text-2E476B {
+    color: var(--text-2E476B);
 }
 
 .text-f66f4d {
@@ -164,10 +173,6 @@
     color: var(--text-ffffff);
     background-color: #2D3134;
     cursor: pointer;
-}
-
-.scroll::-webkit-scrollbar-track {
-    background-color: #F66F4D !important;
 }
 
 .grid-container {
