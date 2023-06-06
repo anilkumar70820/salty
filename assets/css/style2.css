@@ -54,31 +54,92 @@
 }
 
 /* ==========nav end========== */
+/* ====Section First======= */
+
 .box {
-    width: px;
-    height: px;
-    background: red;
+    width: 500px;
+    height: 76px;
+    background: #fdfeff;
     box-shadow: 0px 28px 56px -6px rgba(246, 111, 77, 0.05);
     border-radius: 38px;
 }
 
 .border-1 {
-    position: absolute;
-    width: 133.36px;
-    height: 145.71px;
+    max-width: 133.36px;
     background: #FFFFFF;
     box-shadow: 0px 14px 24px -10px rgba(226, 154, 53, 0.2);
-    border-radius: 9.87879px;
+    border-radius: 0px 0px 0px 10px;
 
 }
 
-.line {
+
+.position-relative:hover {
+    cursor: pointer;
+    display: block;
+}
+
+.bg-clr {
+    background-color: #faf8ed;
+}
+
+.line-1 {
     width: 47px;
     height: 1px;
     border: 1px solid #EAEAEB;
     transform: rotate(90deg);
 }
 
+.pos-abso {
+    position: absolute;
+    left: 10px;
+    top: -27px;
+
+}
+
+.pos-abso-1 {
+    position: absolute;
+    left: 38px;
+    top: -27px;
+}
+
+.pos-abso-2 {
+    position: absolute;
+    right: 8px;
+    top: -27px;
+}
+
+.pos-abso-3 {
+    position: absolute;
+    right: 82%;
+    top: 64%;
+}
+
+.pos-abso-4 {
+    position: absolute;
+    top: 43%;
+    right: -18%;
+}
+
+.pos-abso-5 {
+    position: absolute;
+    top: 8%;
+    left: 7%;
+}
+
+.pos-abso-6 {
+    position: absolute;
+    top: 19%;
+    right: -1%;
+}
+
+.border-3 {
+
+    background: #FFFFFF;
+    border-radius: 4.93939px;
+    border: 1px solid #FFFFFF;
+}
+
+/* =======Section First End============ */
 /* =========Section Second========= */
 .pos-absolute-destination {
     position: absolute;
