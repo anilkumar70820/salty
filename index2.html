@@ -15,15 +15,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- ==========Nav Satrt==================== -->
-  <header class="py-4 bg-first position-sticky top-0 z-1">
+  <header class="py-4 bg-first position-sticky top-0 z-2">
     <div class="container-1">
       <nav class="d-flex justify-content-between align-items-center">
         <div class="d-flex justify-content-between align-items-center">
-          <h1 class="ff-sen fw-bold fs-3md me-5 m-0 cursor-pointer"><img class="pe-1" src="/assets/image/svg/Union.svg"
+          <h1 class="ff-sen fw-bold fs-3md me-5 cursor-pointer mb-0"><img class="pe-1" src="/assets/image/svg/Union.svg"
               alt="">Salty</h1>
 
           <ul
@@ -47,7 +48,13 @@
             <li class="d-lg-none d-block">
               <button class="ff-sen fw-regular fs-2xsm justify-content-end text-f66f4d book-now-btn d-inline-block">Book
                 Now <span>
-                  <img src="/assets/image/svg/button img.svg" alt=""></span></button>
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0 8.45744L4.04598 10.2128L13.4253 2.87235L6.06897 11.1702V15L8.82758 11.9681L13.4253 13.5638L16 0L0 8.45744Z"
+                      fill="#F66F4D" />
+                  </svg> </span>
+              </button>
+
             </li>
           </ul>
         </div>
@@ -60,23 +67,25 @@
           <span></span>
           <span></span>
         </label>
-
       </nav>
     </div>
   </header>
   <!-- ===========Nav End===================== -->
   <!-- ===========Section First Start========= -->
-  <section class="bg-clr">
+  <section class="bg-clr pb-sm-5">
     <div class="container-1">
       <div class="row">
         <div class=" col-12 col-lg-7">
-          <h2 class="ff-sen fw-bold fs-3xl text-2d3134 pb-3">Discover the Best Lovely Places</h2>
-          <p class="ff-inter pb-5 fw-re fs-xsm text-5b5f62">Plan and book your perfect trip with expert
+          <h2 data-aos="fade-up" data-aos-duration="3000" class="ff-sen fw-bold fs-3xl text-2d3134 pb-3">Discover the
+            Best Lovely Places</h2>
+          <p data-aos="fade-up" data-aos-duration="3s" data-aos-delay="1s"
+            class="ff-inter pb-5 fw-re fs-xsm text-5b5f62">Plan and book
+            your perfect trip with expert
             advice,travel<span class="d-lg-block"> tips,
               destination
               information and inspiration from
               us.</span> </p>
-          <div class="box pt-2">
+          <div data-aos="zoom-in" data-aos-duration="3000" class="box pt-2">
             <div class="d-flex justify-content-between align-items-center">
               <div class="ps-4 p-2">
                 <h6 class="ff-inter fw-medium fs-xsm">Where</h6>
@@ -120,12 +129,12 @@
               <img src="/assets/image/svg/loc-1.svg" alt="">
             </div>
             <div class="pos-abso-6">
-           <img src="/assets/image/svg/globe-1.svg" alt=""> 
-           </div>
+              <img src="/assets/image/svg/globe-1.svg" alt="">
+            </div>
             <img class="w-100" src="/assets/image/png/img-1.png" alt="">
-            <div class="p-2 pos-abso-3">
+            <div class="p-2 pos-abso-3 d-none d-md-block">
               <div class="position-relative">
-                  <img src="/assets/image/png/img-1.1.png" alt="">
+                <img src="/assets/image/png/img-1.1.png" alt="">
                 <div class="d-flex border-3 text-center pos-abso-4">
                   <img src="/assets/image/svg/dubai-icon.png" alt="">
                   <h6 class="ps-1 mb-0 fw-medium fs-4xsm">Dubai</h6>
@@ -135,13 +144,13 @@
                 <p class="ff-inter fw-medium fs-3xsm pb-3 d-flex justify-content-center">Dubai moruvumi</p>
                 <div class="d-flex position-relative ">
                   <div class="pos-abso">
-                    <img src="/assets/image/png/img-1-1.png" alt="">
+                    <img class="img-zoom-1" src="/assets/image/png/img-1-1.png" alt="">
                   </div>
                   <div class="pos-abso-1 border-2 ">
-                    <img src="/assets/image/png/img1-2.png" alt="">
+                    <img class="img-zoom-2" src="/assets/image/png/img1-2.png" alt="">
                   </div>
                   <div class="pos-abso-2 border-2">
-                    <img src="/assets/image/png/img-1-3.png" alt="">
+                    <img class="img-zoom-3" src="/assets/image/png/img-1-3.png" alt="">
                   </div>
                 </div>
               </div>
@@ -154,9 +163,16 @@
   <!-- =============Section Second============== -->
   <section class="bg-first py-5">
     <div class="container-1">
-      <div class="d-flex justify-content-between align-items-center">
-        <h2 class="ff-sen fw-bold fs-3xl text-2d3134">Categories</h2>
-        <div class="d-flex">
+      <div class="d-flex justify-content-between flex-md-row flex-column mb-5 pb-3">
+        <div>
+          <h2 class="ff-sen fw-bold fs-3xl text-2d3134">Categories</h2>
+          <p class="ff-inter fw-re fs-xsm text-5b5f62 ">Here are lots of interesting destinations to visit,
+            <span class="d-lg-block"> but don't
+              be
+              confused—they're already grouped</span> by category.
+          </p>
+        </div>
+        <div class="d-flex mt-4 pt-3">
           <span class="arrow-box me-3 pre">
             <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M30 33L24 27L30 21" stroke="#2D3134" stroke-width="1.5" stroke-linecap="round"
@@ -171,122 +187,84 @@
           </span>
         </div>
       </div>
-      <p class="ff-inter fw-re fs-xsm text-5b5f62 mb-5 pb-3">Here are lots of interesting destinations to visit, <span
-          class="d-lg-block"> but don't
-          be
-          confused—they're already grouped</span> by category.</p>
       <div class="destination">
         <div>
-          <div class="position-relative d-inline-block">
-            <img src="/assets/image/png/img2-1.png" alt="">
-            <div class="pos-absolute-destination">
-              <p class="ff-inter fw-semi-bold fs-3md text-ffffff visite mb-0">Visite</p>
-            </div>
+          <div class=" cursol-pointer d-inline-block">
+            <div class="visite_hover"><img src="/assets/image/png/img2-1.png" alt="img2-1"></div>
             <h4 class="ff-inter fw-regular text-2d3134 fs-xmd text-center mt-3">Beach</h4>
           </div>
         </div>
         <div>
-          <div class="position-relative d-inline-block">
-            <img src="/assets/image/png/img2-2.png" alt="">
-            <div class="pos-absolute-destination">
-              <p class="ff-inter fw-semi-bold fs-3md text-ffffff d-none mb-0">Visite</p>
+          <div class="cursol-pointer d-inline-block">
+            <div class="visite_hover">
+              <img src="/assets/image/png/img2-2.png" alt="img2-2">
             </div>
             <h4 class="ff-inter fw-regular text-2d3134 fs-xmd text-center mt-3">Desert</h4>
           </div>
         </div>
         <div>
-          <div class="position-relative d-inline-block">
-            <img src="/assets/image/png/img2-3.png" alt="">
-            <div class="pos-absolute-destination">
-              <p class="ff-inter fw-semi-bold fs-3md text-ffffff d-none mb-0">Visite</p>
+          <div class=" cursol-pointer d-inline-block">
+            <div class="visite_hover">
+              <img src="/assets/image/png/img2-3.png" alt="img2-3">
             </div>
             <h4 class="ff-inter fw-regular text-2d3134 fs-xmd text-center mt-3">Mountain</h4>
           </div>
         </div>
+
         <div>
-          <div class="position-relative d-inline-block">
-            <img src="/assets/image/png/img2-4.png" alt="">
-            <div class="pos-absolute-destination">
-              <p class="ff-inter fw-semi-bold fs-3md text-ffffff d-none mb-0">Visite</p>
+          <div class=" cursol-pointer d-inline-block">
+            <div class="visite_hover">
+              <img src="/assets/image/png/img2-4.png" alt="img2-4">
             </div>
             <h4 class="ff-inter fw-regular text-2d3134 fs-xmd text-center mt-3">Temple</h4>
           </div>
         </div>
+
         <div>
-          <div class="position-relative d-inline-block">
-            <img src="/assets/image/png/img2-5.png" alt="">
-            <div class="pos-absolute-destination">
-              <p class="ff-inter fw-semi-bold fs-3md text-ffffff d-none mb-0">Visite</p>
+          <div class=" cursol-pointer d-inline-block">
+            <div class="visite_hover">
+              <img src="/assets/image/png/img2-5.png" alt="img2-5">
             </div>
             <h4 class="ff-inter fw-regular text-2d3134 fs-xmd text-center mt-3">Tower</h4>
           </div>
         </div>
+
         <div>
-          <div class="position-relative d-inline-block">
-            <img src="/assets/image/png/img2-6.png" alt="">
-            <div class="pos-absolute-destination">
-              <p class="ff-inter fw-semi-bold fs-3md text-ffffff d-none mb-0">Visite</p>
-            </div>
-            <h4 class="ff-inter fw-regular text-2d3134 fs-xmd text-center mt-3">Pyramid</h4>
-          </div>
-        </div>
-        <div>
-          <div class="position-relative d-inline-block">
-            <img src="/assets/image/png/img2-1.png" alt="">
-            <div class="pos-absolute-destination">
-              <p class="ff-inter fw-semi-bold fs-3md text-ffffff d-none mb-0">Visite</p>
-            </div>
-            <h4 class="ff-inter fw-regular text-2d3134 fs-xmd text-center mt-3">Beach</h4>
-          </div>
-        </div>
-        <div>
-          <div class="position-relative d-inline-block">
-            <img src="/assets/image/png/img2-2.png" alt="">
-            <div class="pos-absolute-destination">
-              <p class="ff-inter fw-semi-bold fs-3md text-ffffff d-none mb-0">Visite</p>
-            </div>
-            <h4 class="ff-inter fw-regular text-2d3134 fs-xmd text-center mt-3">Desert</h4>
-          </div>
-        </div>
-        <div>
-          <div class="position-relative d-inline-block">
-            <img src="/assets/image/png/img2-3.png" alt="">
-            <div class="pos-absolute-destination">
-              <p class="ff-inter fw-semi-bold fs-3md text-ffffff d-none mb-0">Visite</p>
-            </div>
-            <h4 class="ff-inter fw-regular text-2d3134 fs-xmd text-center mt-3">Mountain</h4>
-          </div>
-        </div>
-        <div>
-          <div class="position-relative d-inline-block">
-            <img src="/assets/image/png/img2-4.png" alt="">
-            <div class="pos-absolute-destination">
-              <p class="ff-inter fw-semi-bold fs-3md text-ffffff d-none mb-0">Visite</p>
-            </div>
-            <h4 class="ff-inter fw-regular text-2d3134 fs-xmd text-center mt-3">Temple</h4>
-          </div>
-        </div>
-        <div>
-          <div class="position-relative d-inline-block">
-            <img src="/assets/image/png/img2-5.png" alt="">
-            <div class="pos-absolute-destination">
-              <p class="ff-inter fw-semi-bold fs-3md text-ffffff d-none mb-0">Visite</p>
-            </div>
-            <h4 class="ff-inter fw-regular text-2d3134 fs-xmd text-center mt-3">Tower</h4>
-          </div>
-        </div>
-        <div>
-          <div class="position-relative d-inline-block">
-            <img src="/assets/image/png/img2-6.png" alt="">
-            <div class="pos-absolute-destination">
-              <p class="ff-inter fw-semi-bold fs-3md text-ffffff d-none mb-0">Visite</p>
+          <div class=" cursol-pointer d-inline-block">
+            <div class="visite_hover">
+              <img src="/assets/image/png/img2-6.png" alt="img2-6">
             </div>
             <h4 class="ff-inter fw-regular text-2d3134 fs-xmd text-center mt-3">Pyramid</h4>
           </div>
         </div>
 
+        <div>
+          <div class=" cursol-pointer d-inline-block">
+            <div class="visite_hover">
+              <img src="/assets/image/png/img2-2.png" alt="img2-2">
+            </div>
+            <h4 class="ff-inter fw-regular text-2d3134 fs-xmd text-center mt-3">Desert</h4>
+          </div>
+        </div>
+
+        <div>
+          <div class=" cursol-pointer d-inline-block">
+            <div class="visite_hover">
+              <img src="/assets/image/png/img2-5.png" alt="img2-5">
+            </div>
+            <h4 class="ff-inter fw-regular text-2d3134 fs-xmd text-center mt-3">Tower</h4>
+          </div>
+        </div>
+
+        <div>
+          <div class=" cursol-pointer d-inline-block">
+            <div class="visite_hover">
+              <img src="/assets/image/png/img2-3.png" alt="img2-3">
+            </div>
+            <h4 class="ff-inter fw-regular text-2d3134 fs-xmd text-center mt-3">Mountain</h4>
+          </div>
+        </div>
       </div>
-    </div>
   </section>
   <!-- =============Second Second End=========== -->
   <!-- =============Section Third Start========= -->
@@ -296,12 +274,12 @@
         <div class="col-lg-5 d-flex justify-content-center mb-5 mb-lg-0">
           <div class="position-relative">
             <img class="w-lg-100 w-sm-100" src="/assets/image/png/img3-1.png" alt="boy">
-            <div class="destination-box d-inline-block destination-absoulte">
+            <div class="destination-box d-inline-block destination-absoulte d-none d-md-block">
               <img class="ps-3 pb-3" src="/assets/image/svg/destination-icon.svg" alt="destination-icon">
               <h2 class="ff-poppins fw-semi-bold fs-lg text-f66f4d text-center">600%</h2>
               <p class="ff-inter fs-3md fw-regular text-939597 mb-0 text-center">Destinations</p>
             </div>
-            <div class="signle-box d-inline-block signle-absoulte">
+            <div class="signle-box d-inline-block signle-absoulte d-none d-md-block">
               <div class="d-flex align-items-center mb-2">
                 <img class="me-3" src="/assets/image/svg/signle-icon.svg" alt="signle-icon">
                 <h2 class="ff-poppins fw-semi-bold text-2d3134 fs-md mb-0">5000+</h2>
@@ -320,21 +298,27 @@
               you!</span> </p>
           <div class="row ps-lg-5">
             <div class="col-md-4 col-sm-6 mb-md-0 mb-sm-3 mb-3">
-              <div class="experience-card">
-                <h2 class="ff-inter fs-xl text-f66f4d fw-semi-bold">12K+</h2>
-                <p class="ff-inter fw-regular fs-3md text-939597 mb-0">Succes Journey</p>
+              <div data-aos="flip-right">
+                <div class="experience-card">
+                  <h2 class="ff-inter fs-xl text-f66f4d fw-semi-bold">12K+</h2>
+                  <p class="ff-inter fw-regular fs-3md text-939597 mb-0">Succes Journey</p>
+                </div>
               </div>
             </div>
             <div class="col-md-4 col-sm-6 mb-md-0 mb-sm-3 mb-3">
-              <div class="experience-card">
-                <h2 class="ff-inter fs-xl text-f66f4d fw-semi-bold">16+</h2>
-                <p class="ff-inter fw-regular fs-3md text-939597 mb-0">Awards Winning</p>
+              <div data-aos="flip-right">
+                <div class="experience-card">
+                  <h2 class="ff-inter fs-xl text-f66f4d fw-semi-bold">16+</h2>
+                  <p class="ff-inter fw-regular fs-3md text-939597 mb-0">Awards Winning</p>
+                </div>
               </div>
             </div>
             <div class="col-md-4 col-sm-6 mb-md-0 mb-sm-3 mb-3">
-              <div class="experience-card">
-                <h2 class="ff-inter fs-xl text-f66f4d fw-semi-bold">20+</h2>
-                <p class="ff-inter fw-regular fs-3md text-939597 mb-0">Years Of Experience</p>
+              <div data-aos="flip-right">
+                <div class="experience-card">
+                  <h2 class="ff-inter fs-xl text-f66f4d fw-semi-bold">20+</h2>
+                  <p class="ff-inter fw-regular fs-3md text-939597 mb-0">Years Of Experience</p>
+                </div>
               </div>
             </div>
           </div>
@@ -346,16 +330,16 @@
   <!-- =========Section Forth Start=========== -->
   <section class="bg-first py-5">
     <div class="container-1 pt-5">
-      <div class="d-flex justify-content-between align-items-center mb-4 pb-2">
+      <div class="d-flex justify-content-between align-items-center flex-md-row flex-column mb-4 pb-2">
         <h2>Find Popular <span class="d-lg-block">Destination</span> </h2>
         <div class="d-flex">
-          <div class="arrow-box pre">
+          <div class="arrow-box prev">
             <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.22168 10.4443L0.777235 5.99986L5.22168 1.55542" stroke="#2D3134" stroke-width="1.5"
                 stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </div>
-          <div class="arrow-box ms-3 next">
+          <div class="arrow-box ms-3 Next">
             <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.77832 10.4443L5.22276 5.99986L0.77832 1.55542" stroke="black" stroke-width="1.5"
                 stroke-linecap="round" stroke-linejoin="round" />
@@ -363,51 +347,52 @@
           </div>
         </div>
       </div>
-
-      <div class="slider">
-        <div class="width-386 me-4">
-          <img class="w-100" src="/assets/image/png/img4-1.png" alt="">
-          <h3 class="ff-inter fw-semi-bold fs-2md text-2d3134 mt-4 px-2">Mountain Hiking Tour</h3>
-          <h6 class="ff-inter fw-regular text-5b5f62 px-2 mb-4">Mountain Hiking Tour</h6>
-          <div class="pb-4 mb-2 d-flex align-items-center justify-content-between px-2">
-            <p class="ff-inter fw-semi-bold fs-2md text-2d3134 mb-0">$89 <span
-                class="ff-inter fw-regular fs-3xsm text-5b5f62">/Person</span></p>
-            <button class="ff-inter fs-3xsm fw-regular text-2d3134 slider-book-now-btn">Book Now</button>
-          </div>
-        </div>
-        <div class="width-386 me-4">
-          <img class="w-100" src="/assets/image/png/men-in-registhan.png" alt="men-in-registhan">
-          <h3 class="ff-inter fw-semi-bold fs-2md text-2d3134 mt-4 px-2">Machu Picchu, Peru</h3>
-          <h6 class="ff-inter fw-regular text-5b5f62 px-2 mb-4">Machu Picchu, Peru</h6>
-          <div class="pb-4 mb-2 d-flex align-items-center justify-content-between px-2">
-            <p class="ff-inter fw-semi-bold fs-2md text-2d3134 mb-0">$99 <span
-                class="ff-inter fw-regular fs-3xsm text-5b5f62">/Person</span></p>
-            <button class="ff-inter fs-3xsm fw-regular text-2d3134 slider-book-now-btn">Book Now</button>
-          </div>
-        </div>
-        <div class="width-386 me-4">
-          <img class="w-100" src="/assets/image/png/girl-on-mountain.png" alt="girl-on-mountain">
-          <h3 class="ff-inter fw-semi-bold fs-3md text-2d3134 mt-4">The Grand Canyon, Arizona</h3>
-          <h6 class="ff-inter fw-regular text-5b5f62 mb-4">Mountain Hiking Tour</h6>
-          <div class="pb-4 mb-2 d-flex align-items-center justify-content-between px-2">
-            <p class="ff-inter fw-semi-bold fs-2md text-2d3134 mb-0">$70 <span
-                class="ff-inter fw-regular fs-3xsm text-5b5f62">/Person</span></p>
-            <button class="ff-inter fs-3xsm fw-regular text-2d3134 slider-book-now-btn">Book Now</button>
-          </div>
-        </div>
-        <div class="width-386 me-4">
-          <img class="w-100" src="/assets/image/png/img4-1.png" alt="">
-          <h3 class="ff-inter fw-semi-bold fs-2md text-2d3134 mt-4 px-2">Mountain Hiking Tour</h3>
-          <h6 class="ff-inter fw-regular text-5b5f62 px-2 mb-4">Mountain Hiking Tour</h6>
-          <div class="pb-4 mb-2 d-flex align-items-center justify-content-between px-2">
-            <p class="ff-inter fw-semi-bold fs-2md text-2d3134 mb-0">$89 <span
-                class="ff-inter fw-regular fs-3xsm text-5b5f62">/Person</span></p>
-            <button class="ff-inter fs-3xsm fw-regular text-2d3134 slider-book-now-btn">Book Now</button>
-          </div>
-        </div>
+    </div>
 
 
+    <div class="slider ms-5">
+      <div class="slider_box me-4">
+        <img class="w-100" src="/assets/image/png/img4-1.png" alt="">
+        <h3 class="ff-inter fw-semi-bold fs-2md text-2d3134 mt-4 px-2">Mountain Hiking Tour</h3>
+        <h6 class="ff-inter fw-regular text-5b5f62 px-2 mb-4">Mountain Hiking Tour</h6>
+        <div class="pb-4 mb-2 d-flex align-items-center justify-content-between px-2">
+          <p class="ff-inter fw-semi-bold fs-2md text-2d3134 mb-0">$89 <span
+              class="ff-inter fw-regular fs-3xsm text-5b5f62">/Person</span></p>
+          <button class="ff-inter fs-3xsm fw-regular text-2d3134 slider-book-now-btn">Book Now</button>
+        </div>
       </div>
+      <div class="slider_box me-4">
+        <img class="w-100" src="/assets/image/png/men-in-registhan.png" alt="men-in-registhan">
+        <h3 class="ff-inter fw-semi-bold fs-2md text-2d3134 mt-4 px-2">Machu Picchu, Peru</h3>
+        <h6 class="ff-inter fw-regular text-5b5f62 px-2 mb-4">Machu Picchu, Peru</h6>
+        <div class="pb-4 mb-2 d-flex align-items-center justify-content-between px-2">
+          <p class="ff-inter fw-semi-bold fs-2md text-2d3134 mb-0">$99 <span
+              class="ff-inter fw-regular fs-3xsm text-5b5f62">/Person</span></p>
+          <button class="ff-inter fs-3xsm fw-regular text-2d3134 slider-book-now-btn">Book Now</button>
+        </div>
+      </div>
+      <div class="slider_box me-4">
+        <img class="w-100" src="/assets/image/png/girl-on-mountain.png" alt="girl-on-mountain">
+        <h3 class="ff-inter fw-semi-bold fs-3md text-2d3134 mt-4">The Grand Canyon, Arizona</h3>
+        <h6 class="ff-inter fw-regular text-5b5f62 mb-4">Mountain Hiking Tour</h6>
+        <div class="pb-4 mb-2 d-flex align-items-center justify-content-between px-2">
+          <p class="ff-inter fw-semi-bold fs-2md text-2d3134 mb-0">$70 <span
+              class="ff-inter fw-regular fs-3xsm text-5b5f62">/Person</span></p>
+          <button class="ff-inter fs-3xsm fw-regular text-2d3134 slider-book-now-btn">Book Now</button>
+        </div>
+      </div>
+      <div class="slider_box me-4">
+        <img class="w-100" src="/assets/image/png/img4-1.png" alt="">
+        <h3 class="ff-inter fw-semi-bold fs-2md text-2d3134 mt-4 px-2">Mountain Hiking Tour</h3>
+        <h6 class="ff-inter fw-regular text-5b5f62 px-2 mb-4">Mountain Hiking Tour</h6>
+        <div class="pb-4 mb-2 d-flex align-items-center justify-content-between px-2">
+          <p class="ff-inter fw-semi-bold fs-2md text-2d3134 mb-0">$89 <span
+              class="ff-inter fw-regular fs-3xsm text-5b5f62">/Person</span></p>
+          <button class="ff-inter fs-3xsm fw-regular text-2d3134 slider-book-now-btn">Book Now</button>
+        </div>
+      </div>
+
+
     </div>
   </section>
   <!-- =========Section Forth End============= -->
@@ -423,33 +408,61 @@
   <script>
     const a = document.getElementById("nav");
     function navresponsive() {
-      a.classList.toggle("show")
+      a.classList.toggle("show"),
+      document.body.classList.toggle("overflow-hidden")
     }
   </script>
   <script>
     $('.slider').slick({
-      centerMode: true,
-      slidesToShow: 3,
-
+      slidesToShow: 3.1,
+      slidesToScroll: 1,
       arrows: true,
-      prevArrow: $('.pre'),
-      nextArrow: $('.next'),
+      prevArrow: $('.prev'),
+      nextArrow: $('.Next'),
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3.1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+      ]
     })
   </script>
   <script>
     $('.destination').slick({
-      dots: true,
-      infinite: false,
+      dots: false,
+      infinite: true,
       speed: 300,
       slidesToShow: 6,
       slidesToScroll: 1,
+      // mobileFirst: true,
 
       arrows: true,
       prevArrow: $('.pre'),
       nextArrow: $('.next'),
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1200,
           settings: {
             slidesToShow: 4,
             slidesToScroll: 1,
@@ -458,21 +471,32 @@
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 768,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 568,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1
           }
         },
+        {
+          breakpoint: 481,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
       ]
     });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
 </body>
 
