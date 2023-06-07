@@ -242,10 +242,10 @@ div::-webkit-scrollbar {
     border-radius: 50px;
 }
 
-.rating-bg-2 {
-    padding: 5px 10px;
-    background-color: #2D3134;
-    border-radius: 50px;
+.rating-bg:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
 .rating:hover {
@@ -334,13 +334,19 @@ div::-webkit-scrollbar {
     height: 60px;
     background-color: white;
     border-radius: 12px;
+
 }
 
 input {
     outline: none;
     border: none;
 }
-
+input[type="email"]{
+    color: #5B5F62;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "inter";
+}
 .icon-box {
     width: 40px;
     height: 40px;
@@ -349,6 +355,24 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+.send-icon {
+    animation-name: send;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes send {
+    0% {
+        transform: translate(-5px, 10px);
+    }
+
+    50% {
+        transform: translate(5px, -10px);
+    }
 }
 
 .radius {
@@ -362,15 +386,6 @@ input {
     background-repeat: no-repeat;
 }
 
-.send {
-    animation-direction: alternate;
-    animation-name: "send";
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes send {}
-
 /* =========Seven Section End=========== */
 /* =========Footer Start============= */
 .social-media-box {
@@ -381,14 +396,57 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .social-media-box:hover {
     border: 1px solid #f66f4d;
+    animation-play-state: paused;
 }
 
 .social-media-box:hover path {
     fill: #F66F4D;
+}
+
+.facebook {
+    animation-name: facebook;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes facebook {
+
+    50% {
+        transform: translate(0px, 50px);
+    }
+}
+
+.instagram {
+    animation-name: instagram;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.8, .6, .4, 1);
+}
+
+@keyframes instagram {
+
+    50% {
+        transform: translate(0px, 50px);
+    }
+}
+
+.twitter {
+    animation-name: twitter;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 0.7, 0.4, .2);
+}
+
+@keyframes twitter {
+
+    50% {
+        transform: translate(0px, 50px);
+    }
 }
 
 /* =========Media Quries============= */
