@@ -22,7 +22,13 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="overflow-hidden">
+  <!-- ==========Preloader========================== -->
+  <div id="preloader"
+    class="min-vh-100 rating d-flex align-items-center justify-content-center bg-warning position-fixed w-100 top-0 z-3 start-0">
+    <div><img src="/assets/image/svg/Union.svg" alt=""></div>
+  </div>
+  <!-- ==========Preloader End====================== -->
   <!-- ==========Nav Satrt========================== -->
   <header class="py-4 bg-first position-sticky top-0 z-2">
     <div class="container-1">
@@ -33,20 +39,23 @@
           <ul
             class="d-flex align-items-center justify-content-center flex-column flex-lg-row navbaar p-0 mb-0 gap-lg-5 gap-3"
             id="nav">
-            <li class="">
-              <a class="ff-sen fw-regular fs-2xsm text-2E476B underline" href="#">Home</a>
+            <li>
+              <a class="ff-sen fw-regular fs-2xsm text-2E476B underline" onclick="navresponsive()" href="#home">Home</a>
             </li>
             <li>
-              <a class="ff-sen fw-regular fs-2xsm text-2E476B underline" href="#">About us</a>
+              <a class="ff-sen fw-regular fs-2xsm text-2E476B underline" onclick="navresponsive()" href="#about">About
+                us</a>
             </li>
             <li>
-              <a class="ff-sen fw-regular fs-2xsm text-2E476B underline" href="#">Destinations</a>
+              <a class="ff-sen fw-regular fs-2xsm text-2E476B underline" onclick="navresponsive()"
+                href="#destination">Destinations</a>
             </li>
             <li>
-              <a class="ff-sen fw-regular fs-2xsm text-2E476B underline" href="#">Tours</a>
+              <a class="ff-sen fw-regular fs-2xsm text-2E476B underline" onclick="navresponsive()"
+                href="#tour">Tours</a>
             </li>
             <li>
-              <a class="ff-sen fw-regular fs-2xsm text-2E476B underline" href="#">Blog</a>
+              <a class="ff-sen fw-regular fs-2xsm text-2E476B underline" onclick="navresponsive()" href="#blog">Blog</a>
             </li>
             <li class="d-lg-none d-block">
               <button class="ff-sen fw-regular fs-2xsm justify-content-end text-f66f4d book-now-btn d-inline-block">Book
@@ -61,20 +70,24 @@
           </ul>
         </div>
         <div class="d-lg-block d-none d-flex justify-content-end">
-          <button class="ff-sen fw-regular fs-2xsm text-f66f4d book-now-btn d-inline-block">Book Now <span> <img
-                src="/assets/image/svg/button img.svg" alt=""></span></button>
+          <button class="ff-sen fw-medium fs-2xsm text-f66f4d book-now-btn d-inline-block">Book Now <span> <svg
+                width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 8.45744L4.04598 10.2128L13.4253 2.87235L6.06897 11.1702V15L8.82758 11.9681L13.4253 13.5638L16 0L0 8.45744Z"
+                  fill="#F66F4D" />
+              </svg></span></button>
         </div>
-        <label for="menuicon" class="d-lg-none z-1" onclick="navresponsive()">
-          <span></span>
-          <span></span>
-          <span></span>
+        <label for="menuicon" class="d-lg-none z-1" onclick="navresponsive(),myFunction(this)">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
         </label>
       </nav>
     </div>
   </header>
   <!-- ==========Nav End============================ -->
   <!-- ==========Section First Start================ -->
-  <section class="bg-clr pb-sm-5">
+  <section class="bg-clr pb-sm-5" id="home">
     <div class="container-1">
       <div class="row">
         <div class=" col-12 col-lg-7">
@@ -87,9 +100,9 @@
               destination
               information and inspiration from
               us.</span> </p>
-          <div data-aos="zoom-in" data-aos-duration="3000" class="box pt-2 mb-4 mb-lg-0">
+          <div data-aos="zoom-in" data-aos-duration="3000" class="box p-2 mb-4 mb-lg-0">
             <div class="d-flex justify-content-between align-items-center">
-              <div class="ps-4 p-2">
+              <div class="ps-lg-4 p-lg-2">
                 <h6 class="ff-inter fw-medium fs-xsm">Where</h6>
                 <p class="ff-inter fw-regular fs-4xsm m-0">Center Point, Lo...
                   <span class="ps-3">
@@ -102,7 +115,7 @@
                 </p>
               </div>
               <div class="line-1"></div>
-              <div class="pe-4 p-2">
+              <div class="pe-lg-4 p-lg-2">
                 <h6 class="ff-inter fw-medium fs-xsm">Date</h6>
                 <p class="ff-inter fw-regular fs-4xsm m-0">09th March,2021
                   <span class="ps-3">
@@ -120,7 +133,7 @@
                   </span>
                 </p>
               </div>
-              <img class="pe-4  search_icon" src="/assets/image/png/search-bar.png" alt="search_icon">
+              <img class="pe-lg-4  search_icon" src="/assets/image/png/search-bar.png" alt="search_icon">
             </div>
           </div>
         </div>
@@ -167,7 +180,8 @@
       <div class="d-flex justify-content-between flex-md-row flex-column mb-5 pb-3">
         <div>
           <h2 data-aos="fade-up" data-aos-duration="3000" class="ff-sen fw-bold fs-3xl text-2d3134">Categories</h2>
-          <p data-aos="fade-up" data-aos-duration="3000" class="ff-inter fw-re fs-xsm text-5b5f62 ">Here are lots of interesting destinations to visit,
+          <p data-aos="fade-up" data-aos-duration="3000" class="ff-inter fw-re fs-xsm text-5b5f62 ">Here are lots of
+            interesting destinations to visit,
             <span class="d-lg-block"> but don't
               be
               confused—they're already grouped</span> by category.
@@ -284,15 +298,18 @@
           </div>
         </div>
         <div class="col-lg-7 ps-lg-5">
-          <h2 data-aos="fade-up" data-aos-duration="3000" class="ff-inter fw-semi-bold text-f66f4d fs-3md ps-lg-5">Our Experience</h2>
-          <h2 data-aos="fade-up" data-aos-duration="3000" class="ff-inter fw-semi-bold text-2d3134 fs-2xl ps-lg-5 mb-3">Our Stories Have Adventures</h2>
-          <p data-aos="fade-up" data-aos-duration="3000" class="ff-inter fw-regular fs-2xsm text-5b5f62 ps-lg-5 mb-4 pb-3">We are experienced in bringing adventures
+          <h2 data-aos="fade-up" data-aos-duration="3000" class="ff-inter fw-semi-bold text-f66f4d fs-3md ps-lg-5">Our
+            Experience</h2>
+          <h2 data-aos="fade-up" data-aos-duration="3000" class="ff-inter fw-semi-bold text-2d3134 fs-2xl ps-lg-5 mb-3">
+            Our Stories Have Adventures</h2>
+          <p data-aos="fade-up" data-aos-duration="3000"
+            class="ff-inter fw-regular fs-2xsm text-5b5f62 ps-lg-5 mb-4 pb-3">We are experienced in bringing adventures
             to stay
             their <span class="d-lg-block"> journey, with all outdoor destinations in the world
               as our</span>specialties. Start your adventure now! Nature has already <span class="d-lg-block">called
               you!</span> </p>
           <div class="row ps-lg-5">
-            <div class="col-md-4 col-sm-6 mb-md-0 mb-sm-3 mb-3">
+            <div class="col-md-4 col-6 d-flex justify-content-center justify-content-md-start mb-md-0 mb-sm-3 mb-3">
               <div data-aos="flip-right">
                 <div class="experience-card">
                   <h2 class="ff-inter fs-xl text-f66f4d fw-semi-bold">12K+</h2>
@@ -300,7 +317,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-sm-6 mb-md-0 mb-sm-3 mb-3">
+            <div class="col-md-4 col-6 d-flex justify-content-center justify-content-md-start mb-md-0 mb-sm-3 mb-3">
               <div data-aos="flip-right">
                 <div class="experience-card">
                   <h2 class="ff-inter fs-xl text-f66f4d fw-semi-bold">16+</h2>
@@ -308,7 +325,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-sm-6 mb-md-0 mb-sm-3 mb-3">
+            <div class="col-md-4 col-12 d-flex justify-content-center justify-content-md-start">
               <div data-aos="flip-right">
                 <div class="experience-card">
                   <h2 class="ff-inter fs-xl text-f66f4d fw-semi-bold">20+</h2>
@@ -323,9 +340,10 @@
   </section>
   <!-- ==========Section Third End================== -->
   <!-- ==========Section Forth Start================ -->
-  <section class="bg-first py-5">
+  <section class="bg-first py-5" id="tour">
     <div class="container-1 pt-5">
-      <div data-aos="fade-up" data-aos-duration="3000" class="d-flex justify-content-between align-items-center flex-md-row flex-column mb-4 pb-2">
+      <div data-aos="fade-up" data-aos-duration="3000"
+        class="d-flex justify-content-between align-items-center flex-md-row flex-column mb-4 pb-2">
         <h2>Find Popular <span class="d-lg-block">Destination</span> </h2>
         <div class="d-flex">
           <div class="slider-arrow prev">
@@ -347,7 +365,8 @@
       <div class="my-container">
         <div class="slider">
           <div class="slider_box me-4">
-            <img class="w-100" src="/assets/image/png/img4-1.png" alt="">
+            <div class="overflow-hidden rounded-4"><img class="w-100 rating" src="/assets/image/png/img4-1.png"
+                alt="man-on-water-bridge"></div>
             <h3 class="ff-inter fw-semi-bold fs-2md text-2d3134 mt-4 px-2">Mountain Hiking Tour</h3>
             <h6 class="ff-inter fw-regular text-5b5f62 px-2 mb-4">Mountain Hiking Tour</h6>
             <div class="pb-4 mb-2 d-flex align-items-center justify-content-between px-2">
@@ -357,7 +376,8 @@
             </div>
           </div>
           <div class="slider_box me-4">
-            <img class="w-100" src="/assets/image/png/men-in-registhan.png" alt="men-in-registhan">
+            <div class="overflow-hidden rounded-4"><img class="w-100 rating"
+                src="/assets/image/png/men-in-registhan.png" alt="men-in-registhan"></div>
             <h3 class="ff-inter fw-semi-bold fs-2md text-2d3134 mt-4 px-2">Machu Picchu, Peru</h3>
             <h6 class="ff-inter fw-regular text-5b5f62 px-2 mb-4">Machu Picchu, Peru</h6>
             <div class="pb-4 mb-2 d-flex align-items-center justify-content-between px-2">
@@ -367,7 +387,8 @@
             </div>
           </div>
           <div class="slider_box me-4">
-            <img class="w-100" src="/assets/image/png/girl-on-mountain.png" alt="girl-on-mountain">
+            <div class="overflow-hidden rounded-4"><img class="w-100 rating"
+                src="/assets/image/png/girl-on-mountain.png" alt="girl-on-mountain"></div>
             <h3 class="ff-inter fw-semi-bold fs-3md text-2d3134 mt-4">The Grand Canyon, Arizona</h3>
             <h6 class="ff-inter fw-regular text-5b5f62 mb-4">Mountain Hiking Tour</h6>
             <div class="pb-4 mb-2 d-flex align-items-center justify-content-between px-2">
@@ -377,7 +398,8 @@
             </div>
           </div>
           <div class="slider_box me-4">
-            <img class="w-100" src="/assets/image/png/img4-1.png" alt="">
+            <div class="overflow-hidden rounded-4"><img class="w-100 rating" src="/assets/image/png/img4-1.png"
+                alt="man-on-water-bridge"></div>
             <h3 class="ff-inter fw-semi-bold fs-2md text-2d3134 mt-4 px-2">Mountain Hiking Tour</h3>
             <h6 class="ff-inter fw-regular text-5b5f62 px-2 mb-4">Mountain Hiking Tour</h6>
             <div class="pb-4 mb-2 d-flex align-items-center justify-content-between px-2">
@@ -392,7 +414,7 @@
   </section>
   <!-- ==========Section Forth End================== -->
   <!-- ==========Fifth Section Start================ -->
-  <section class="bg-first py-5">
+  <section class="bg-first py-5" id="destination">
     <div class="container my-container pt-lg-5">
       <h2 data-aos="fade-up" data-aos-duration="3000" class="ff-inter fw-semi-bold fs-2xl text-2d3134 text-center mb-3">
         Top Destinations</h2>
@@ -408,49 +430,49 @@
         <button class="ff-poppins fw-regular fs-3xsm text-2d3134 destination-btn">Italy</button>
       </div>
       <div data-aos="fade-up" data-aos-duration="3000" class="grid-container mt-5 pt-1">
-        <div class="grid-1 position-relative rating">
-          <img class="w-100 h-100" src="/assets/image/png/g-img-1.png" alt="img">
+        <div class="grid-1 position-relative overflow-hidden img rounded-5">
+          <img class="w-100 h-100 rating" src="/assets/image/png/g-img-1.png" alt="img">
           <p class="ff-inter fw-medium fs-3xsm pos-absolute text-2d3134 rating-bg">3.5</p>
           <div class="pos-absolute-2">
             <h3 class="ff-inter fw-semi-bold text-ffffff fs-3md">Vientam</h3>
             <p class="ff-inter fw-regular fs-3xsm text-ffffff">Worefall</p>
           </div>
         </div>
-        <div class="grid-2 position-relative rating">
-          <img class="w-100 h-100" src="/assets/image/png/g-img-2.png" alt="img">
+        <div class="grid-2 position-relative overflow-hidden img rounded-5">
+          <img class="w-100 h-100 object-fit rating" src="/assets/image/png/g-img-2.png" alt="img">
+          <p class="ff-inter fw-medium fs-3xsm pos-absolute text-ffffff rating-bg-2">3.5</p>
+          <div class="pos-absolute-2">
+            <h3 class="ff-inter fw-semi-bold text-ffffff fs-3md">Vientam</h3>
+            <p class="ff-inter fw-regular fs-3xsm text-ffffff">Worefall</p>
+          </div>
+        </div>
+        <div class="grid-3 position-relative overflow-hidden img rounded-5">
+          <img class="w-100 h-100 rating" src="/assets/image/png/g-img-3.png" alt="img">
+          <p class="ff-inter fw-medium fs-3xsm pos-absolute text-ffffff rating-bg-2">3.5</p>
+          <div class="pos-absolute-2">
+            <h3 class="ff-inter fw-semi-bold text-ffffff fs-3md">Vientam</h3>
+            <p class="ff-inter fw-regular fs-3xsm text-ffffff">Worefall</p>
+          </div>
+        </div>
+        <div class="grid-4 position-relative overflow-hidden img rounded-5">
+          <img class="w-100 h-100 rating" src="/assets/image/png/g-img-4.png" alt="img">
           <p class="ff-inter fw-medium fs-3xsm pos-absolute text-2d3134 rating-bg">3.5</p>
           <div class="pos-absolute-2">
             <h3 class="ff-inter fw-semi-bold text-ffffff fs-3md">Vientam</h3>
             <p class="ff-inter fw-regular fs-3xsm text-ffffff">Worefall</p>
           </div>
         </div>
-        <div class="grid-3 position-relative rating">
-          <img class="w-100 h-100" src="/assets/image/png/g-img-3.png" alt="img">
-          <p class="ff-inter fw-medium fs-3xsm pos-absolute text-2d3134 rating-bg">3.5</p>
+        <div class="grid-5 position-relative overflow-hidden img rounded-5">
+          <img class="w-100 h-100 rating" src="/assets/image/png/g-img-5.png" alt="img">
+          <p class="ff-inter fw-medium fs-3xsm pos-absolute text-ffffff rating-bg-2">3.5</p>
           <div class="pos-absolute-2">
             <h3 class="ff-inter fw-semi-bold text-ffffff fs-3md">Vientam</h3>
             <p class="ff-inter fw-regular fs-3xsm text-ffffff">Worefall</p>
           </div>
         </div>
-        <div class="grid-4 position-relative rating">
-          <img class="w-100 h-100" src="/assets/image/png/g-img-4.png" alt="img">
-          <p class="ff-inter fw-medium fs-3xsm pos-absolute text-2d3134 rating-bg">3.5</p>
-          <div class="pos-absolute-2">
-            <h3 class="ff-inter fw-semi-bold text-ffffff fs-3md">Vientam</h3>
-            <p class="ff-inter fw-regular fs-3xsm text-ffffff">Worefall</p>
-          </div>
-        </div>
-        <div class="grid-5 position-relative rating">
-          <img class="w-100 h-100" src="/assets/image/png/g-img-5.png" alt="img">
-          <p class="ff-inter fw-medium fs-3xsm pos-absolute text-2d3134 rating-bg">3.5</p>
-          <div class="pos-absolute-2">
-            <h3 class="ff-inter fw-semi-bold text-ffffff fs-3md">Vientam</h3>
-            <p class="ff-inter fw-regular fs-3xsm text-ffffff">Worefall</p>
-          </div>
-        </div>
-        <div class="grid-6 position-relative rating">
-          <img class="w-100 h-100" src="/assets/image/png/g-img-6.png" alt="img">
-          <p class="ff-inter fw-medium fs-3xsm pos-absolute text-2d3134 rating-bg">3.5</p>
+        <div class="grid-6 position-relative overflow-hidden img rounded-5">
+          <img class="w-100 h-100 rating" src="/assets/image/png/g-img-6.png" alt="img">
+          <p class="ff-inter fw-medium fs-3xsm pos-absolute text-ffffff rating-bg-2">3.5</p>
           <div class="pos-absolute-2">
             <h3 class="ff-inter fw-semi-bold text-ffffff fs-3md">Vientam</h3>
             <p class="ff-inter fw-regular fs-3xsm text-ffffff">Worefall</p>
@@ -461,7 +483,7 @@
   </section>
   <!-- ==========Fifth Section End================== -->
   <!-- ==========Sixth Section Start================ -->
-  <section class="bg-first py-5">
+  <section class="bg-first py-5" id="about">
     <div class="container my-container pt-lg-5">
       <div class="row pt-lg-5">
         <div class="col-lg-6 d-flex justify-content-lg-start justify-content-center" data-aos="fade-up"
@@ -622,8 +644,8 @@
           <div class="input-bg d-flex justify-content-between align-items-center mb-4">
             <input type="email" placeholder="Enter Your email address"
               class="ff-inter fw-regular fs-3xsm text-5b5f62 ps-4">
-            <div class="icon-box pt-2 me-3 cursol-pointer"><img class="send-icon" src="/assets/image/svg/send-Icon.svg"
-                alt="send-Icon">
+            <div class="icon-box pt-2 me-3 cursol-pointer ms-2"><img class="send-icon"
+                src="/assets/image/svg/send-Icon.svg" alt="send-Icon">
             </div>
           </div>
         </div>
@@ -632,7 +654,7 @@
   </section>
   <!-- ==========Seventh Section End================ -->
   <!-- ==========Footer Start======================= -->
-  <footer class="bg-first py-5">
+  <footer class="bg-first py-5" id="blog">
     <div class="my-container container pt-lg-5 pb-lg-4">
       <div class="row">
         <div class="col-lg-4 mb-lg-0 mb-5" data-aos="fade-up" data-aos-duration="3000">
@@ -663,7 +685,7 @@
         </div>
         <div class="col-lg-8">
           <div class="row">
-            <div data-aos="fade-up" data-aos-duration="3000" class="col-md-3 col-sm-6 mb-md-0 mb-5">
+            <div data-aos="fade-up" data-aos-duration="3000" class="col-md-3 col-sm-6 col-6 mb-md-0 mb-5">
               <h2 class="ff-inter fw-medium fs-xsm text-2d3134 mb-4">Resources</h2>
               <ul class="p-0">
                 <li class="mb-3"><a class="ff-inter fw-regular fs-3xsm text-676a6c" href="#"> Download
@@ -675,7 +697,7 @@
                 <li><a class="ff-inter fw-regular fs-3xsm text-676a6c" href="#"> App Directory</a></li>
               </ul>
             </div>
-            <div data-aos="fade-up" data-aos-duration="3000" class="col-md-3 col-sm-6 mb-md-0 mb-5">
+            <div data-aos="fade-up" data-aos-duration="3000" class="col-md-3 col-sm-6 col-6 mb-md-0 mb-5">
               <h2 class="ff-inter fw-medium fs-xsm text-2d3134 mb-4">Travellers</h2>
               <ul class="p-0">
                 <li class="mb-3"><a class="ff-inter fw-regular fs-3xsm text-676a6c" href="#"> Why
@@ -687,7 +709,7 @@
                 <li><a class="ff-inter fw-regular fs-3xsm text-676a6c" href="#"> Instagram post</a></li>
               </ul>
             </div>
-            <div data-aos="fade-up" data-aos-duration="3000" class="col-md-3 col-sm-6 mb-md-0 mb-5">
+            <div data-aos="fade-up" data-aos-duration="3000" class="col-md-3 col-sm-6 col-6 mb-md-0 mb-5">
               <h2 class="ff-inter fw-medium fs-xsm text-2d3134 mb-4">Company</h2>
               <ul class="p-0">
                 <li class="mb-3"><a class="ff-inter fw-regular fs-3xsm text-676a6c" href="#">Travelling</a></li>
@@ -698,7 +720,7 @@
                 <li><a class="ff-inter fw-regular fs-3xsm text-676a6c" href="#">Information</a></li>
               </ul>
             </div>
-            <div data-aos="fade-up" data-aos-duration="3000" class="col-md-3 col-sm-6">
+            <div data-aos="fade-up" data-aos-duration="3000" class="col-md-3 col-sm-6 col-6">
               <h2 class="ff-inter fw-medium fs-xsm text-2d3134 mb-4">Get App</h2>
               <ul class="p-0">
                 <li class="mb-3"><a class="ff-inter fw-regular fs-3xsm text-676a6c" href="#"> App
@@ -728,7 +750,9 @@
   <!-- ==========Aos Animation Link================= -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
   </script>
   <!-- ==========Js Script========================== -->
   <script>
@@ -748,7 +772,16 @@
     const a = document.getElementById("nav");
     function navresponsive() {
       a.classList.toggle("show"),
-        document.body.classList.toggle("overflow-hidden")
+        document.body.classList.toggle("overflow_hidden")
+    }
+    const preloader = document.getElementById("preloader")
+    setTimeout(() => {
+      preloader.classList.add("d-none")
+      preloader.classList.add("pointer-event-none")
+      document.body.classList.remove("overflow-hidden")
+    }, 3000)
+    function myFunction(x) {
+      x.classList.toggle("change");
     }
   </script>
   <script>

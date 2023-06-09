@@ -175,24 +175,44 @@
 
 /* ========Common Classes End====== */
 /* ========nav======== */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
 .book-now-btn {
     border: 2px solid #F66F4D;
     padding: 20px 34px;
     background-color: #FAF8ED;
     border-radius: 50px;
-    transition: all 3s cubic-bezier(1, 0.82, 0.165, 1);
     animation-name: loca-icon;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
-
+    transition: all 400ms linear;
 }
 
 @keyframes loca-icon {
     50% {
         transform: translate(10px, 0px);
     }
+}
+
+.book-now-btn:hover {
+    color: #faf8ed;
+    background-color: #f66f4d;
+}
+
+.book-now-btn:hover path {
+    fill: #faf8ed;
 }
 
 nav ul li a {
@@ -467,6 +487,7 @@ nav ul li a {
     padding: 26px;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 14px;
+    transition: all 300ms linear;
 }
 
 .experience-card:hover {
@@ -532,6 +553,11 @@ nav ul li a {
     background-color: #FAF8ED;
     box-shadow: 0px 5px 5px 0px rgba(192, 188, 161, 0.22);
     display: inline-block;
+    cursor: pointer;
+}
+
+.slider_box:hover .rating {
+    transform: scale(1.5);
 }
 
 .slider-book-now-btn {
@@ -549,8 +575,8 @@ nav ul li a {
 
 .slider-arrow {
     border: 1px solid black;
-    width: 40px;
-    height: 40px;
+    width: 54px;
+    height: 54px;
     border-radius: 50%;
     background-color: #FAF8ED;
     display: flex;
@@ -603,6 +629,12 @@ div::-webkit-scrollbar {
     display: none;
 }
 
+.object-fit {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
 .grid-container {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -645,7 +677,6 @@ div::-webkit-scrollbar {
     top: 24px;
     left: 24px;
     display: none;
-    ;
 }
 
 .pos-absolute-2 {
@@ -661,19 +692,22 @@ div::-webkit-scrollbar {
     border-radius: 50px;
 }
 
-.rating-bg:hover {
+.rating-bg-2 {
+    padding: 5px 10px;
     background-color: black;
-    color: white;
+    border-radius: 50px;
+}
+
+.rating {
+    transition: all 500ms linear;
     cursor: pointer;
 }
 
 .rating:hover {
-    cursor: pointer;
-    scale: 1.1;
-    transition: all 400ms linear;
+    scale: 1.5;
 }
 
-.rating:hover .pos-absolute {
+.img:hover .pos-absolute {
     display: block;
     animation-name: show;
     animation-duration: 1s;
@@ -701,7 +735,7 @@ div::-webkit-scrollbar {
     }
 }
 
-.rating:hover .pos-absolute-2 {
+.img:hover .pos-absolute-2 {
     display: block;
     animation-name: show;
     animation-duration: 1s;
@@ -758,6 +792,9 @@ div::-webkit-scrollbar {
 input {
     outline: none;
     border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
 }
 
 input[type="email"] {
@@ -808,6 +845,30 @@ input[type="email"] {
 
 /* =========Seven Section End=========== */
 /* =========Footer Start============= */
+footer ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #FFD482;
+    left: 0;
+    bottom: -5px;
+    display: inline-block;
+    transition: all 400ms linear;
+}
+
+footer ul li a {
+    position: relative;
+}
+
+footer ul li a:hover {
+    color: #f66f4d;
+}
+
+footer ul li a:hover::after {
+    width: 100%;
+}
+
 .social-media-box {
     border: 1px solid black;
     border-radius: 100px;
@@ -961,6 +1022,10 @@ input[type="email"] {
 
     .show {
         left: 0;
+    }
+
+    .overflow_hidden {
+        overflow: hidden !important;
     }
 }
 
